@@ -58,7 +58,7 @@ const scrollRight = (e: React.MouseEvent) => { // Add the event parameter
                   {/* Background Image Container */}
                   <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105" 
-                    style={{ backgroundImage: `url('${category.imageUrl}')` }}
+                    style={{ backgroundImage: `url(${category.imageUrl})` }}
                   >
                     {/* Overlay for text readability */}
                     <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-25 transition-opacity"></div>
