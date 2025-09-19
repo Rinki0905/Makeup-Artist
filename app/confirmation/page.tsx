@@ -4,11 +4,9 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Suspense } from 'react';
 
-// This component reads the data from the URL and displays it
 function ConfirmationDetails() {
   const searchParams = useSearchParams();
 
-  // Get each piece of data from the URL query
   const name = searchParams.get('name');
   const contact = searchParams.get('contact');
   const dateTime = searchParams.get('dateTime');
@@ -48,7 +46,6 @@ function ConfirmationDetails() {
   );
 }
 
-// The main page component that wraps the details in Suspense
 export default function ConfirmationPage() {
     return (
         <Suspense fallback={<div className="text-center p-10">Loading confirmation...</div>}>

@@ -2,15 +2,8 @@ import { Artist } from '@/types';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// A small helper function to display star ratings
 const renderStars = (rating: number) => {
-  const fullStars = Math.floor(rating);
-  const halfStar = rating % 1 !== 0;
-  let stars = '⭐'.repeat(fullStars);
-  if (halfStar) {
-    stars += '✨'; // Using a sparkle for a half star, you can choose another icon
-  }
-  return stars;
+  return '⭐'.repeat(Math.floor(rating));
 };
 
 interface ArtistCardProps {
@@ -28,15 +21,19 @@ export default function ArtistCard({ artist, categoryId }: ArtistCardProps) {
         height={300}
         className="w-full h-56 object-cover"
       />
-      <div className="p-4 flex-grow flex flex-col">
+      <div className="p-4 flex-grow flex flex-col text-center">
         <h3 className="text-xl font-bold text-gray-800">{artist.name}</h3>
-        <div className="my-2">
+        <div className="my-1">
           <span className="text-yellow-400">{renderStars(artist.rating)}</span>
           <span className="text-gray-600 ml-2">{artist.rating.toFixed(1)}</span>
         </div>
+        
+        <p className="text-gray-600 text-sm my-2 flex-grow italic">
+          "{artist.bio}"
+        </p>
+
         <p className="text-lg font-semibold text-pink-500 mb-4">₹{artist.price.toLocaleString()}</p>
         
-        {/* This Link is the "Book" button */}
         <div className="mt-auto">
           <Link 
             href={`/booking?artistId=${artist.id}&categoryId=${categoryId}`}

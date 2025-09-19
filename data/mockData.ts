@@ -3,75 +3,77 @@ import { Category, Artist } from '@/types';
 export const categories: Category[] = [
   {
     id: 'bridal',
-    name: 'Bridal Makeup',
-    subcategories: [
-      { id: 'traditional', name: 'Traditional Bridal' },
-      { id: 'contemporary', name: 'Contemporary Bridal' },
-      { id: 'destination', name: 'Destination Wedding Looks' },
-    ],
+    name: 'Bridal Makeover Services',
     imageUrl: 'https://i.pinimg.com/736x/02/7e/35/027e35fe1ecf68f5250584f10756ed40.jpg',
+    subcategories: [
+      { id: 'traditional-bridal', name: 'Traditional Bridal', imageUrl: 'https://i.pinimg.com/736x/4b/b4/8e/4bb48ef298b2eecedde49c6b6933c1af.jpg' },
+      { id: 'contemporary-bridal', name: 'Contemporary Bridal', imageUrl: 'https://i.pinimg.com/736x/3b/88/d1/3b88d14d7e2fe9edc7966dfa73e34259.jpg' },
+      { id: 'destination-wedding', name: 'Destination Wedding', imageUrl: 'https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg' },
+    ],
   },
   {
     id: 'party',
     name: 'Party & Glam Makeup',
-    subcategories: [
-      { id: 'cocktail', name: 'Cocktail Party' },
-      { id: 'red-carpet', name: 'Red Carpet Glam' },
-      { id: 'evening', name: 'Evening Party Looks' },
-    ],
     imageUrl: 'https://i.pinimg.com/originals/75/33/85/7533858cbc91a648f2c76bfe4a372372.jpg',
+    subcategories: [
+      { id: 'cocktail-party', name: 'Cocktail Party', imageUrl: 'https://i.pinimg.com/1200x/52/9c/ac/529cacd4667f1ffa1405e37abe335c1c.jpg' },
+      { id: 'red-carpet-glam', name: 'Red Carpet Glam', imageUrl: 'https://i.pinimg.com/736x/7b/cc/2d/7bcc2d651ef52a695d2dcac85cc26927.jpg' },
+      { id: 'evening-party', name: 'Evening Party Looks', imageUrl: 'https://i.pinimg.com/736x/65/a6/ee/65a6ee242eec0ff571c9cfced75b7bab.jpg' },
+    ],
   },
   {
     id: 'casual',
     name: 'Casual / Everyday Makeup',
-    subcategories: [
-      { id: 'office', name: 'Office Look' },
-      { id: 'minimal', name: 'Minimal/Natural' },
-      { id: 'day-out', name: 'Day Out/Brunch' },
-    ],
     imageUrl: 'https://i.pinimg.com/736x/59/06/d7/5906d75e98b20d7fb1f8b10a8464bcd1.jpg',
+    subcategories: [
+      { id: 'office-look', name: 'Office Look', imageUrl: 'https://images.pexels.com/photos/3768894/pexels-photo-3768894.jpeg' },
+      { id: 'minimal-natural', name: 'Minimal/Natural', imageUrl: 'https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg' },
+      { id: 'day-out-brunch', name: 'Day Out/Brunch', imageUrl: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg' },
+    ],
   },
   {
     id: 'fashion-editorial',
     name: 'Fashion & Editorial Makeup',
-    subcategories: [
-      { id: 'runway', name: 'Runway' },
-      { id: 'photoshoot', name: 'Photoshoot Makeup' },
-      { id: 'creative', name: 'Creative/High Fashion' },
-    ],
     imageUrl: 'https://i.pinimg.com/736x/1a/10/9b/1a109bb68867a540c62550cae1f2800b.jpg',
+    subcategories: [
+      { id: 'runway-looks', name: 'Runway Looks', imageUrl: 'https://i.pinimg.com/1200x/b5/69/de/b569dedd68d4d71201aa780f40bae9ba.jpg' },
+      { id: 'photoshoot-makeup', name: 'Photoshoot Makeup', imageUrl: 'https://i.pinimg.com/originals/02/54/ef/0254ef789681f676b000ba9cf97b2267.jpg' },
+      { id: 'creative-high-fashion', name: 'Creative/High Fashion', imageUrl: 'https://i.pinimg.com/736x/ea/74/09/ea7409ff68f619a5dc0342ab168dc07b.jpg' },
+    ],
   },
   {
     id: 'festive-cultural',
     name: 'Festive / Cultural Makeup',
-    subcategories: [
-      { id: 'diwali-eid-christmas', name: 'Diwali/Eid/Christmas Looks' },
-      { id: 'navratri-garba', name: 'Navratri/Garba' },
-      { id: 'regional-styles', name: 'Regional Styles' },
-    ],
     imageUrl: 'https://media.istockphoto.com/id/1174342496/photo/flawlessly-done-makeup-for-a-big-day.jpg?s=612x612&w=0&k=20&c=FshUJO2BoIpvLD2PJBskg-W2iuFAjZwbgk9QvIIzyYA=',
+    subcategories: [
+      { id: 'diwali-eid-christmas', name: 'Diwali/Eid/Christmas Looks', imageUrl: 'https://i.pinimg.com/736x/fa/5c/5a/fa5c5ab467a9701330f25b1e8a47f8d5.jpg' },
+      { id: 'navratri-garba', name: 'Navratri/Garba', imageUrl: 'https://i.pinimg.com/736x/99/9e/35/999e352bede75fe6ea3e5f78a9c50160.jpg' },
+      { id: 'regional-styles', name: 'Regional Styles', imageUrl: 'https://i.pinimg.com/736x/00/49/e1/0049e1e4e2306bfdc129ad17f8d80c4f.jpg' },
+    ],
   },
   {
     id: 'specialty',
     name: 'Specialty Makeup',
-    subcategories: [
-      { id: 'hd', name: 'HD/Camera Ready' },
-      { id: 'airbrush', name: 'Airbrush Makeup' },
-      { id: 'theatrical', name: 'Theatrical/Stage' },
-    ],
     imageUrl: 'https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    subcategories: [
+      { id: 'hd-camera-ready', name: 'HD/Camera Ready', imageUrl: 'https://i.pinimg.com/1200x/b6/e5/32/b6e532a537715a802da654558ca8615a.jpg' },
+      { id: 'airbrush-makeup', name: 'Airbrush Makeup', imageUrl: 'https://i.pinimg.com/736x/97/bb/0c/97bb0c0675236442a0b068f5c80b454b.jpg' },
+      { id: 'theatrical-stage', name: 'Theatrical/Stage', imageUrl: 'https://i.pinimg.com/736x/fd/c1/a5/fdc1a5059048561a1c63e31cefbe2dc9.jpg' },
+    ],
   },
 ];
 
+// --- UPDATED ARTISTS with new 'bio' property ---
 export const artists: Artist[] = [
-  // ... (your existing artist data remains the same)
   {
     id: 'artist-1',
     name: 'Priya Sharma',
-    profilePicture: 'https://i.pinimg.com/1200x/59/51/8c/59518ce58997ecc6ac7cb62d3943ad6d.jpg', // Placeholder image
+    profilePicture: 'https://i.pinimg.com/1200x/59/51/8c/59518ce58997ecc6ac7cb62d3943ad6d.jpg',
     rating: 4.8,
     price: 8000,
     categoryId: 'bridal',
+    subcategoryId: 'traditional-bridal',
+    bio: 'Creating timeless looks for your most special day.',
   },
   {
     id: 'artist-2',
@@ -80,6 +82,8 @@ export const artists: Artist[] = [
     rating: 5.0,
     price: 12000,
     categoryId: 'bridal',
+    subcategoryId: 'contemporary-bridal',
+    bio: 'Modern techniques for the contemporary bride.',
   },
   {
     id: 'artist-3',
@@ -88,6 +92,8 @@ export const artists: Artist[] = [
     rating: 4.5,
     price: 3500,
     categoryId: 'party',
+    subcategoryId: 'cocktail-party',
+    bio: 'Bold and glamorous looks that last all night.',
   },
   {
     id: 'artist-4',
@@ -96,6 +102,8 @@ export const artists: Artist[] = [
     rating: 4.9,
     price: 4500,
     categoryId: 'party',
+    subcategoryId: 'red-carpet-glam',
+    bio: 'Red carpet ready with a flawless finish.',
   },
   {
     id: 'artist-5',
@@ -104,6 +112,8 @@ export const artists: Artist[] = [
     rating: 4.7,
     price: 6000,
     categoryId: 'specialty',
+    subcategoryId: 'hd-camera-ready',
+    bio: 'Perfecting every detail for the camera.',
   },
   {
     id: 'artist-6',
@@ -112,6 +122,8 @@ export const artists: Artist[] = [
     rating: 4.6,
     price: 5000,
     categoryId: 'casual',
+    subcategoryId: 'minimal-natural',
+    bio: 'Enhancing your natural beauty for an everyday glow.',
   },
   {
     id: 'artist-7',
@@ -120,6 +132,8 @@ export const artists: Artist[] = [
     rating: 4.9,
     price: 9000,
     categoryId: 'fashion-editorial',
+    subcategoryId: 'photoshoot-makeup',
+    bio: 'Creative and high-fashion looks for editorials.',
   },
   {
     id: 'artist-8',
@@ -128,5 +142,122 @@ export const artists: Artist[] = [
     rating: 4.7,
     price: 7000,
     categoryId: 'festive-cultural',
+    subcategoryId: 'diwali-eid-christmas',
+    bio: 'Vibrant and traditional styles for festive occasions.',
+  },
+  {
+  id: 'artist-9',
+  name: 'Meera Rajput',
+  profilePicture: 'https://i.pinimg.com/736x/2c/3a/28/2c3a28b0336b2ba13f9824c25732c4c8.jpg',
+  rating: 4.9,
+  price: 9500,
+  categoryId: 'bridal',
+  subcategoryId: 'traditional-bridal',
+  bio: 'Mastering the art of traditional bridal beauty.',
+},
+{
+  id: 'artist-10',
+  name: 'Kavita Singh',
+  profilePicture: 'https://i.pinimg.com/736x/8a/47/38/8a473827d0573b98c538a221f7a3536c.jpg',
+  rating: 4.7,
+  price: 8200,
+  categoryId: 'bridal',
+  subcategoryId: 'traditional-bridal',
+  bio: 'Elegant and classic looks for the perfect bride.',
+},
+{
+  id: 'artist-11',
+  name: 'Aditi Rao',
+  profilePicture: 'https://i.pinimg.com/736x/8c/2b/30/8c2b304c5e31154e6377ce094e430722.jpg',
+  rating: 4.8,
+  price: 8800,
+  categoryId: 'bridal',
+  subcategoryId: 'traditional-bridal',
+  bio: 'Bringing regal traditions to life with makeup.',
+},
+
+// --- Contemporary Bridal Artists ---
+{
+  id: 'artist-12',
+  name: 'Rhea Sharma',
+  profilePicture: 'https://i.pinimg.com/736x/d8/65/c6/d865c697bf3e0a2d01c6407b8b2923b7.jpg',
+  rating: 4.9,
+  price: 11000,
+  categoryId: 'bridal',
+  subcategoryId: 'contemporary-bridal',
+  bio: 'Chic and modern styles for today\'s bride.',
+},
+{
+  id: 'artist-13',
+  name: 'Sameer Khan',
+  profilePicture: 'https://i.pinimg.com/736x/a2/3b/38/a23b38d32b500b58f5533161c322b426.jpg',
+  rating: 4.8,
+  price: 10500,
+  categoryId: 'bridal',
+  subcategoryId: 'contemporary-bridal',
+  bio: 'Minimalist yet stunning contemporary bridal looks.',
+},
+{
+  id: 'artist-14',
+  name: 'Isha Nair',
+  profilePicture: 'https://i.pinimg.com/736x/1a/51/8a/1a518a40236a26d7d704c35e3d7a8549.jpg',
+  rating: 4.7,
+  price: 9800,
+  categoryId: 'bridal',
+  subcategoryId: 'contemporary-bridal',
+  bio: 'Fresh, dewy, and effortlessly beautiful makeup.',
+},
+
+// --- Destination Wedding Artists ---
+{
+  id: 'artist-15',
+  name: 'Marco Verratti',
+  profilePicture: 'https://i.pinimg.com/736x/f9/51/c9/f951c9035a06c83f218204b68e4c7676.jpg',
+  rating: 5.0,
+  price: 15000,
+  categoryId: 'bridal',
+  subcategoryId: 'destination-wedding',
+  bio: 'Creating breathtaking looks for weddings abroad.',
+},
+{
+  id: 'artist-16',
+  name: 'Elena Fernandes',
+  profilePicture: 'https://i.pinimg.com/736x/91/3c/9f/913c9f5a43b74a38779c1e7a57a1705e.jpg',
+  rating: 4.9,
+  price: 14000,
+  categoryId: 'bridal',
+  subcategoryId: 'destination-wedding',
+  bio: 'Weather-proof and picture-perfect destination makeup.',
+},
+{
+  id: 'artist-17',
+  name: 'Zara Sheikh',
+  profilePicture: 'https://i.pinimg.com/736x/6f/30/8a/6f308a38a79899f928e0b1d3d0f0c05a.jpg',
+  rating: 4.8,
+  price: 13500,
+  categoryId: 'bridal',
+  subcategoryId: 'destination-wedding',
+  bio: 'Your on-location expert for flawless wedding makeup.',
+},
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Ananya Sharma',
+    feedback: 'Absolutely stunning bridal makeup! Priya made me feel like a queen on my wedding day. The attention to detail was incredible.',
+    service: 'Traditional Bridal',
+  },
+  {
+    id: 2,
+    name: 'Rohan Gupta',
+    feedback: 'Anjali was fantastic for my sister\'s destination wedding. Professional, punctual, and the results were flawless. Highly recommended!',
+    service: 'Destination Wedding',
+  },
+  {
+    id: 3,
+    name: 'Sneha Reddy',
+    feedback: 'I needed a last-minute party look and Neha Kapoor delivered! The glam was perfect and lasted all night. I got so many compliments.',
+    service: 'Cocktail Party',
   },
 ];

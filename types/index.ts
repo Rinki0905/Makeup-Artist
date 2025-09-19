@@ -1,6 +1,7 @@
 export interface Subcategory {
   id: string;
   name: string;
+  imageUrl: string;
 }
 
 export interface Category {
@@ -17,4 +18,6 @@ export interface Artist {
   rating: number;
   price: number;
   categoryId: string;
+  subcategoryId?: string;
+  bio?: string;
 }

@@ -8,11 +8,13 @@ export default function Footer() {
           <h2 className="text-2xl font-bold text-pink-500">GlamBook</h2>
           <p className="text-sm text-gray-500">Your Beauty, Our Passion.</p>
         </div>
-        <div className="flex space-x-6">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
           <Link href="/" className="hover:text-pink-500 transition-colors">Home</Link>
-          <Link href="#categories" className="hover:text-pink-500 transition-colors">Categories</Link>
-          <Link href="#" className="hover:text-pink-500 transition-colors">About</Link>
-          <Link href="#" className="hover:text-pink-500 transition-colors">Contact</Link>
+          <Link href="/#categories" className="hover:text-pink-500 transition-colors">Categories</Link>
+          <Link href="/admin/bookings" className="font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+            View All Bookings
+          </Link>
+          
         </div>
       </div>
     </footer>

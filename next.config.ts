@@ -12,10 +12,15 @@ const nextConfig: NextConfig = {
         hostname: 'images.pexels.com',
       },
       {
-        // Add this new object for Pinterest images
         protocol: 'https',
         hostname: 'i.pinimg.com',
       },
+      {
+        // Add this line for the iStockphoto images
+        protocol: 'https',
+        hostname: 'media.istockphoto.com',
+      },
+      { protocol: 'https', hostname: 'i.pinimg.com' },
     ],
   },
 };
