@@ -212,7 +212,7 @@ export const artists: Artist[] = [
 {
   id: 'artist-15',
   name: 'Marco Verratti',
-  profilePicture: 'https://i.pinimg.com/736x/f9/51/c9/f951c9035a06c83f218204b68e4c7676.jpg',
+  profilePicture: 'https://i.pinimg.com/originals/1e/02/0e/1e020e32b94dda3f4bbbd9b2607112a9.jpg',
   rating: 5.0,
   price: 15000,
   categoryId: 'bridal',

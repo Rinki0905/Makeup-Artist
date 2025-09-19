@@ -28,9 +28,9 @@ export default function ArtistCard({ artist, categoryId }: ArtistCardProps) {
           <span className="text-gray-600 ml-2">{artist.rating.toFixed(1)}</span>
         </div>
         
-        <p className="text-gray-600 text-sm my-2 flex-grow italic">
-          "{artist.bio}"
-        </p>
+       <p className="text-gray-600 text-sm my-2 flex-grow italic">
+  &quot;{artist.bio}&quot;
+</p>
 
         <p className="text-lg font-semibold text-pink-500 mb-4">₹{artist.price.toLocaleString()}</p>
         

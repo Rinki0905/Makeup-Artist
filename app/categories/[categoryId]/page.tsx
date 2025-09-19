@@ -1,15 +1,28 @@
 import { categories } from '@/data/mockData';
 import Link from 'next/link';
 import Image from 'next/image';
+import { JSX } from 'react';
 
-interface SubcategoryPageProps {
-  params: {
-    categoryId: string;
-  };
-}
+type ParamsShape = { categoryId: string };
 
-export default async function SubcategoryPage({ params }: SubcategoryPageProps) {
-  const { categoryId } = params;
+// I've renamed the function for clarity, as it displays subcategories
+export default async function SubcategoryPage({
+  params,
+}: {
+  params?: Promise<ParamsShape>;
+}): Promise<JSX.Element> {
+  const resolvedParams = (await params) as ParamsShape | undefined;
+  const categoryId = resolvedParams?.categoryId;
+
+  if (!categoryId) {
+    return (
+      <div className="text-center py-20">
+        <h1 className="text-2xl font-bold">Category ID is missing.</h1>
+        <Link href="/" className="text-pink-500 hover:underline mt-4 inline-block">Go back to Home</Link>
+      </div>
+    );
+  }
+
   const category = categories.find(c => c.id === categoryId);
 
   if (!category) {
@@ -36,15 +49,15 @@ export default async function SubcategoryPage({ params }: SubcategoryPageProps) 
           {category.subcategories.map((sub) => (
             <Link
               key={sub.id}
-              href={`/artists/${sub.id}`} 
+              href={`/artists/${sub.id}`} // <-- This line is now fixed
               className="group block rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300"
             >
               <div className="relative h-72">
                 <Image
                   src={sub.imageUrl}
                   alt={sub.name}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: 'cover' }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="transition-transform duration-500 group-hover:scale-110"
                 />
